@@ -1,0 +1,72 @@
+html body {
+  margin: 0;
+
+  h1 {
+    color: black;
+    text-shadow: -1px -1px 0 white, /* Hvit ramme */ 1px -1px 0 white,
+      -1px 1px 0 white, 1px 1px 0 white, 2px 2px 5px black; /* Svart skygge */
+  }
+
+  background-color: rgb(61, 77, 79);
+}
+
+/* .grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header "
+    "main   main";
+} */
+
+ul li a {
+  text-decoration: none;
+  margin-left: 50px;
+  font-size: large;
+  font-weight: bold;
+  padding: 1rem;
+  color: rgb(0, 0, 0);
+  border-radius: 1.1rem;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  background-color: rgb(121, 173, 168);
+}
+
+ul li {
+  list-style: none;
+}
+main {
+  grid-area: header;
+  padding: 10rem;
+  border-radius: 1.1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+.li a:hover {
+  background-color: rgb(95, 114, 122);
+}
+
+ul li :hover {
+  background-color: rgb(114, 232, 192);
+}
+a {
+  background-color: rgb(140, 188, 187);
+}
+
+@media screen and (max-width: 1200px) {
+  .nav {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+.nav li a.active {
+  background-color: rgb(86, 134, 139);
+  color: white; /* Hvit tekst for aktiv lenke */
+}

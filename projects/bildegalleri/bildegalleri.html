@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles/styles.css" />
+    <link rel="stylesheet" href="bildegalleri.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <ul class="nav">
+        <li>
+          <a href="../../index.html">Home</a>
+        </li>
+        <li><a href="../../pages/projects.html" class="active">project</a></li>
+        <li><a href="../../pages/about.html">about</a></li>
+      </ul>
+    </header>
+    <main>
+      <div class="slider">
+        <div class="slides">
+          <div id="slide-1">
+            <img src="/photos/Foss i stordalen.png" alt="bildegaleri" />
+          </div>
+          <div id="slide-2">
+            <img src="/photos/Photo oppgave.png" alt="bildegaleri2" />
+          </div>
+          <div id="slide-3">
+            <img src="/photos/Foss i stordalen.png" alt="bidegaleri3" />
+          </div>
+          <div id="slide-4">
+            <img src="/photos/Photo oppgave.png" alt="bildegaleri4" />
+          </div>
+
+          <div id="slide-5">
+            <img src="/photos/Foss i stordalen.png" />
+            <!-- kommentar -->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      const slides = document.querySelector(".slides");
+      const totalSlides = slides.children.length;
+      let currentIndex = 0;
+
+      setInterval(() => {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        slides.style.transform = `translateX(-${100 * currentIndex}vw)`;
+      }, 3000);
+    </script>
+  </body>
+</html>
