@@ -1,23 +1,17 @@
-html body {
+body {
   margin: 0;
-
-  h1 {
-    color: black;
-    text-shadow: -1px -1px 0 white, /* Hvit ramme */ 1px -1px 0 white,
-      -1px 1px 0 white, 1px 1px 0 white, 2px 2px 5px black; /* Svart skygge */
-  }
-
-  background-color: rgb(61, 77, 79);
+  background: linear-gradient(
+    to bottom right,
+    #f0f4f8,
+    #d9e2ec
+  ); /* Lys blågrå gradient */
 }
 
-/* .grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto 1fr auto;
-  grid-template-areas:
-    "header header "
-    "main   main";
-} */
+h1 {
+  color: #2f4858; /* Mørk blågrå */
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+    1px 1px 0 white, 2px 2px 5px #2f4858; /* Mørkere skygge */
+}
 
 ul li a {
   text-decoration: none;
@@ -25,38 +19,63 @@ ul li a {
   font-size: large;
   font-weight: bold;
   padding: 1rem;
-  color: rgb(0, 0, 0);
+  color: #ffffff;
   border-radius: 1.1rem;
+  background-color: #0077b6; /* Midnattsblå */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 3fr auto;
+  grid-template-areas:
+    "header header"
+    "main   main"
+    "footer  footer";
 }
 
 .nav {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0;
-  background-color: rgb(121, 173, 168);
+  background: linear-gradient(90deg, #0096c7, #48cae4);
+  padding: 0.5rem 1rem;
 }
 
 ul li {
   list-style: none;
 }
-main {
-  grid-area: header;
-  padding: 10rem;
+
+header {
+  grid-area: main;
+  padding: 2rem;
   border-radius: 1.1rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
-}
-.li a:hover {
-  background-color: rgb(95, 114, 122);
+  background-color: #ffffff;
+  color: #333333;
+  border: 2px solid #0077b6;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 2rem;
 }
 
-ul li :hover {
-  background-color: rgb(114, 232, 192);
+main {
+  grid-area: main;
+  padding: 2rem;
+  border-radius: 1.1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  background-color: #ffffff;
+  color: #333333;
+  border: 2px solid #0077b6;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 2rem;
 }
-a {
-  background-color: rgb(140, 188, 187);
+
+li a:hover {
+  background-color: #48cae4; /* Lysere blå for hover-effekt */
 }
 
 @media screen and (max-width: 1200px) {
@@ -67,6 +86,6 @@ a {
 }
 
 .nav li a.active {
-  background-color: rgb(86, 134, 139);
-  color: white; /* Hvit tekst for aktiv lenke */
+  background-color: #0077b6; /* Aktiv lenke i blå */
+  color: white;
 }

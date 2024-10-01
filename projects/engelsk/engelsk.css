@@ -1,6 +1,7 @@
-html {
-  background-color: rgb(61, 77, 79);
+/* html {
+  background-color: rgb(23, 33, 33);
 }
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -12,13 +13,13 @@ html {
 }
 
 header {
-  background-color: rgb(140, 188, 187);
+  background-color: rgb(232, 214, 203);
 }
 
 main {
-  background-color: rgb(140, 188, 187);
+  background-color: rgb(208, 173, 167);
 }
 
 footer {
-  background-color: rgb(140, 188, 187);
-}
+  background-color: rgb(232, 214, 203);
+} */
