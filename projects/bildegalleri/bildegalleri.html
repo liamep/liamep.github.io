@@ -8,7 +8,7 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
+    <nav>
       <ul class="nav">
         <li>
           <a href="../../index.html">Home</a>
@@ -16,39 +16,49 @@
         <li><a href="../../pages/projects.html" class="active">project</a></li>
         <li><a href="../../pages/about.html">about</a></li>
       </ul>
-    </header>
-    <main>
+    </nav>
+
+    <div class="main">
       <div class="slider">
         <div class="slides">
           <div id="slide-1">
             <img src="/photos/Foss i stordalen.png" alt="bildegaleri" />
           </div>
           <div id="slide-2">
-            <img src="/photos/Photo oppgave.png" alt="bildegaleri2" />
-          </div>
-          <div id="slide-3">
-            <img src="/photos/Foss i stordalen.png" alt="bidegaleri3" />
+            <img
+              src="/photos/Ferdig bilde av beste blad 2.png"
+              alt="bidegaleri2"
+            />
           </div>
           <div id="slide-4">
             <img src="/photos/Photo oppgave.png" alt="bildegaleri4" />
           </div>
-
           <div id="slide-5">
-            <img src="/photos/Foss i stordalen.png" />
+            <img src="/photos/Dråpe.png" />
           </div>
         </div>
       </div>
-    </main>
-
+    </div>
     <script>
       const slides = document.querySelector(".slides");
       const totalSlides = slides.children.length;
       let currentIndex = 0;
 
+      slides.appendChild(slides.children[0].cloneNode(true));
+
       setInterval(() => {
-        currentIndex = (currentIndex + 1) % totalSlides;
+        currentIndex = (currentIndex + 1) % (totalSlides + 1);
+        slides.style.transition = "transform 1s ease";
         slides.style.transform = `translateX(-${100 * currentIndex}vw)`;
-      }, 2000);
+
+        if (currentIndex === totalSlides) {
+          setTimeout(() => {
+            slides.style.transition = "none";
+            slides.style.transform = "translateX(0)";
+            currentIndex = 0;
+          }, 1000);
+        }
+      }, 3000);
     </script>
   </body>
 </html>
