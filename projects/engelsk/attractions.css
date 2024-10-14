@@ -1,18 +1,24 @@
 .attractions {
   display: flex;
-  /* justify-content: start; */
-  margin: auto 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
   margin-left: 15rem;
 }
 
 .attraction {
-  width: 40%;
-  /* background-color: #009e60; */
-  /* border: 1px solid #ccc; */
-  /* margin: 10px; */
-  padding: 10px;
+  width: 45%;
+  margin: 10px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  border-radius: 1rem;
 }
 
 .attraction img {
   width: 100%;
+  border-radius: 1rem;
+}
+
+.attraction:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
