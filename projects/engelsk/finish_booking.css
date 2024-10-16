@@ -1,0 +1,15 @@
+.body_box {
+  text-align: center;
+  padding: 0;
+}
+html {
+  background-color: #009e60;
+}
+a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  background-color: #fcd116;
+  padding: 1rem;
+  border-radius: 1rem;
+}
