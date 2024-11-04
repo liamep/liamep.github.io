@@ -1,39 +1,29 @@
+body {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
 .box {
-  padding: 2rem;
-  background-color: #f0f4f8;
-  border-radius: 1rem;
+  margin-left: 2rem;
+  padding: 12rem;
+  background-color: rgba(52, 52, 52, 0.6);
+  border-radius: 5px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  font-size: 30px;
+  font-size: 5rem;
+  border: 5px solid black;
 }
 
 .box:hover {
   cursor: pointer;
   transform: scale(1.05);
   box-shadow: 0em 0.1em 0.3em rgba(0, 0, 0, 0.6);
-  background-color: #d5dfe9;
+  background-color: rgba(73, 73, 73, 0.6);
 }
-
-.body-box {
-  padding: 10rem;
-  background-color: #f0f4f8;
-}
-
-footer {
-  background-color: #2f4858;
-  width: 100%;
-  padding: 2rem;
-  color: white;
-}
-
-ul li {
-  list-style: none;
-}
-
 main {
-  background-color: #ffffff;
-  color: #333333;
+  display: flex;
+  justify-content: center;
 }
-
-.body-box {
-  background-color: #d9e2ec;
+#OverskiftProject {
+  font-size: xxx-large;
+  display: flex;
+  justify-content: center;
 }

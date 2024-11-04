@@ -1,0 +1,21 @@
+body {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+header h1 {
+  display: flex;
+  justify-content: center;
+}
+main h2 {
+  display: flex;
+  justify-content: center;
+}
+.erfaring {
+  margin-left: 2rem;
+  padding: 6rem;
+  background-color: rgba(52, 52, 52, 0.6);
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  font-size: 1rem;
+  border: 5px solid black;
+  width: 20%;
+}
