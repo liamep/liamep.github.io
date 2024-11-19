@@ -54,3 +54,8 @@ main p {
 .omMeg {
   border-bottom: #333 2px solid;
 }
+
+.omMeg p {
+  font-weight: 100;
+  font-size: 1.2rem;
+}
