@@ -75,3 +75,19 @@ footer {
   padding: 1rem 0;
   margin-top: 2rem;
 }
+
+.video-container {
+  width: 100%;
+}
+
+.video {
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 16 / 9;
+}
+
+@media (max-width: 1090px) {
+  .video {
+    width: 90%;
+  }
+}
