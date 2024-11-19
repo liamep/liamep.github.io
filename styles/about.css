@@ -1,6 +1,7 @@
 body {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.2);
 }
+
 header h1 {
   display: flex;
   justify-content: center;
@@ -19,3 +20,39 @@ main h2 {
   border: 5px solid black;
   width: 20%;
 }
+
+
+
+
+
+
+.about-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-header p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Main content */
+.about-main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.about-main h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.5rem;
+}
+
+.about-main p {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+

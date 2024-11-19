@@ -1,73 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/styles.css" />
-    <link rel="stylesheet" href="../styles/projects.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/styles.css" />
+  <link rel="stylesheet" href="../styles/projects.css" />
+  <title>Projects</title>
+</head>
+<body>
+  <nav>
+    <ul class="nav">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+    </ul>
+  </nav>
 
-    <title>Document</title>
-  </head>
-  <body>
-    <nav>
-      <ul class="nav">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="projects.html" class="active">project</a></li>
-        <li><a href="about.html">about</a></li>
-        <li><a href="portfolio.html">portfolio</a></li>
-      </ul>
-    </nav>
-
-    <div class="body-box">
-      <h1 id="OverskiftProject">projects</h1>
-      <div class="container">
-        <main>
-          <button
-            class="box"
-            onclick="location.href='../projects/engelsk/jamaica.html'"
-          >
-            Jamaica
-          </button>
-          <button
-            class="box"
-            onclick="location.href='../projects/bildegalleri/bildegalleri.html'"
-          >
-            Bildegalleri
-          <!-- </button>
-          <button
-            class="box"
-            onclick="location.href='/projects/media/media.html'"
-          > -->
-            <!-- coming soon
-          </button>
-          <button class="box" onclick="location.href='teknologi.html'">
-            coming soon
-          </button>
-          <button class="box" onclick="location.href='programming.html'">
-            coming soon
-          </button>
-          <button class="box" onclick="location.href='math.html'">
-            coming soon
-          </button>
-          <button class="box" onclick="location.href='natural_sciences.html'">
-            coming soon
-          </button>
-          <button
-            class="box"
-            onclick="location.href='concept_development.html'"
-          >
-            coming soon
-          </button>
-          <button
-            class="box"
-            onclick="location.href='concept_development.html'"
-          >
-            coming soon
-          </button>
-        </main> -->
-
-        <!-- <footer>Liam Eidsnes Phillips</footer> -->
-      </div>
+  <div class="body-box">
+    <h1 id="OverskiftProject">Mine Prosjekter</h1>
+    <div class="container">
+        <div class="project-box" onclick="location.href='../projects/engelsk/jamaica.html'">
+          <img src="../photos/JamaicaProsjekt.png" alt="Jamaica Prosjekt" />
+          <div class="project-content">
+            <h2>Jamaica</h2>
+            <p>Et detaljert prosjekt som utforsker skjønnheten i Jamaica.</p>
+          </div>
+        </div>
+  
+        <div class="project-box" onclick="location.href='../projects/bildegalleri/bildegalleri.html'">
+          <img src="../photos/BildegalleriProsjekt.png" alt="Bildegalleri Jamaica" />
+          <div class="project-content">
+            <h2>Bildegalleri</h2>
+            <p>Et galleri som viser fantastiske bilder.</p>
+          </div>
+        </div>
+  
+        <div class="project-box">
+          <img src="https://via.placeholder.com/300x200?text=Coming+Soon" alt="Kommende Prosjekt" />
+          <div class="project-content">
+            <h2>Kommende Senere</h2>
+            <p>Hold deg oppdatert! Dette prosjektet lanseres snart.</p>
+          </div>
+        </div>
     </div>
-  </body>
+  </div>
+</body>
 </html>

@@ -1,3 +1,12 @@
+* {
+  box-sizing: border-box; 
+}
+
+body, html {
+  overscroll-behavior: none;
+}
+
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -36,3 +45,4 @@ nav {
 .nav .active {
   background-color: rgb(65, 65, 65);
 }
+
