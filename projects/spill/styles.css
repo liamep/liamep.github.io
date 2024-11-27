@@ -1,0 +1,71 @@
+html {
+  background-color: rgb(33, 33, 33);
+}
+
+h2 {
+  color: white;
+}
+#spillvalg {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  gap: 8px;
+}
+#Overskrift {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.kort {
+  transition: transform 0.5s ease-in-out;
+  border-radius: 2rem;
+  width: 25%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.kort:hover {
+  transform: scale(0.7);
+  cursor: pointer;
+}
+
+#Regler {
+  display: grid;
+  justify-items: center;
+  color: rgb(145, 255, 154);
+  list-style-type: none;
+  padding-right: 20%;
+}
+
+.stein {
+  background-color: rgb(156, 186, 169);
+
+  object-fit: contain;
+}
+
+.saks {
+  background-color: rgb(213, 185, 215);
+  margin-right: 4px;
+  margin-left: 4px;
+  object-fit: contain;
+}
+
+.papir {
+  background-color: rgb(156, 162, 205);
+  object-fit: contain;
+}
+
+.stein:hover {
+  background-color: rgb(108, 183, 140);
+}
+
+.saks:hover {
+  background-color: rgb(207, 147, 211);
+}
+
+.papir:hover {
+  background-color: rgb(110, 122, 201);
+}
