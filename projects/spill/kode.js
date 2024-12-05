@@ -68,7 +68,7 @@ function motstanderValg() {
 
   let div = document.createElement("div");
   let bilde = document.createElement("img");
-  bilde.src = "/bilder/" + valg[motstanderValg] + ".png";
+  bilde.src = "bilder/" + valg[motstanderValg] + ".png";
   bilde.width = width[motstanderValg];
 
   div.classList.add("kort");
