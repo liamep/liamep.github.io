@@ -5,12 +5,15 @@ html {
 h2 {
   color: white;
 }
+
 #spillvalg {
   display: flex;
   justify-content: center;
   position: relative;
   gap: 8px;
+  flex-wrap: wrap; /* Tillater linjebryting på små skjermer */
 }
+
 #Overskrift {
   display: flex;
   justify-content: center;
@@ -20,16 +23,39 @@ h2 {
 .kort {
   transition: transform 0.5s ease-in-out;
   border-radius: 2rem;
-  width: 25%;
-  height: 700px;
+  width: 25%; /* Dynamisk bredde for fleksibilitet */
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 10px;
+  max-width: 350px; /* Sikrer at kortene ikke blir for brede */
+  padding: 1rem;
+  height: 700px; /* Fast høyde */
+  box-sizing: border-box; /* Inkluder padding i total størrelse */
+}
+
+.kort img {
+  width: 100%;
+  max-height: 100%; /* Begrens høyden */
+  object-fit: contain; /* Bevar proporsjoner */
 }
 
 .kort:hover {
-  transform: scale(0.7);
+  transform: scale(0.95); /* Mindre zoom-effekt */
   cursor: pointer;
+}
+
+/* Responsiv tilpasning */
+@media (max-width: 1024px) {
+  .kort {
+    height: 500px; /* Justert høyde for mellomstore skjermer */
+  }
+}
+
+@media (max-width: 800px) {
+  .kort {
+    height: 300px; /* Justert høyde for små skjermer */
+  }
 }
 
 #Regler {
@@ -40,22 +66,21 @@ h2 {
   padding-right: 20%;
 }
 
+.stein, .saks, .papir {
+  object-fit: contain;
+}
+
 .stein {
   background-color: rgb(156, 186, 169);
-
-  object-fit: contain;
 }
 
 .saks {
   background-color: rgb(213, 185, 215);
-  margin-right: 4px;
-  margin-left: 4px;
-  object-fit: contain;
+  /* margin: 0 4px; Sammenslått margin-left og margin-right */
 }
 
 .papir {
   background-color: rgb(156, 162, 205);
-  object-fit: contain;
 }
 
 .stein:hover {
@@ -68,4 +93,9 @@ h2 {
 
 .papir:hover {
   background-color: rgb(110, 122, 201);
+}
+.mellomrom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

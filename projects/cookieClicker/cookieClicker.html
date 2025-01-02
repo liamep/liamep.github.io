@@ -4,11 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../styles/styles.css" />
-    <link rel="stylesheet" href="bildegalleri.css" />
+    <link rel="stylesheet" href="cookieClicker.css" />
     <script src="kode.js" defer></script>
     <title>Document</title>
   </head>
-  <body>
     <nav>
       <ul class="nav">
         <li>
@@ -18,25 +17,14 @@
         <li><a href="../../pages/about.html">Om meg</a></li>
         <li><a href="../../pages/portfolio.html">Portfolio</a></li>
       </ul>
-    </nav>
-    <main >
-      <h1>Bildegalleri</h1>
-      <div class="bildegalleri">
-        <button id="pause">Pause</button>
-            <img id="bilde" src="" alt="Bildegalleri"/>
-            <!-- Fylles ut av Javascript -->
-            <p id="bildeInfo">
-              <!-- Fylles ut av Javascript -->
-            </p>
-    
-  <div>
-    <p>Endre hastighet</p>
-    <input type="range" min="1" max="10" value="5" id="slider">
-    <p id="hastighet">5</p>
-  </div>
+    </nav>  
 
-
+    <main>
+      <p>Level: <span id="level">1</span></p>
+      <h1>Penger <span id="penger">0</span></h1>
+      <button id="upgrade">Upgrade price <span id="price">10</span></button>
+      <div id="cupcake">
+        <img src="/photos/cupcake.jpg" alt="cupcake" width="300px" />
       </div>
-    </main>
-  </body>
+    </main> 
 </html>

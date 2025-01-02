@@ -1,38 +1,67 @@
-* {
-  box-sizing: border-box;
+body {
+  background-color: rgb(21, 21, 21);
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-.slides {
-  display: flex;
+p {
+  color: white;
+  width: 100%;
+  max-width: 800px;
+  object-fit: contain;
+  padding: 1rem;
+  background-color:rgb(30, 30, 30); ;
+  border-radius: 10px;
+ 
+
+ 
 }
 
-.slides > div {
-  flex-shrink: 0;
-  width: 100vw;
-  height: 100vh;
-  position: relative;
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 20px;
+}
 
-  /* Plassere bildene i midten på skjermen */
+.bildegalleri {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px;
+  padding-bottom: 4rem;
 }
 
-img {
-  /* Setter høyden */
-  height: 100%;
+.bildegalleri img {
+  width: 100%;
+  max-width: 1200px;
+  height: 700px;
+  object-fit: contain;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
 }
 
-html,
-body {
-  height: 100%;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
+.bildeinfo {
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1rem;
+  max-width: 700px;
+}
+ 
+.bilde_per_sekund{
+  
 }
 
-.main {
-  background-color: black;
-  margin-bottom: 10rem;
-  padding-top: 2.5rem;
+
+@media (max-width: 600px) {
+  .bildegalleri img {
+    height: 300px;
+  }
+
+  .bildeinfo {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
 }

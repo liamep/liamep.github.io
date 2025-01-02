@@ -32,7 +32,7 @@ main h2 {
   margin: 0 auto;
 }
 
-/* Main content */
+
 main {
   max-width: 800px;
   margin: 0 auto;
@@ -47,17 +47,12 @@ main {
 }
 
 main p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.8;
 }
 
 .omMeg {
   border-bottom: #333 2px solid;
-}
-
-.omMeg p {
-  font-weight: 100;
-  font-size: 1.2rem;
 }
 
 .omMeg h1 {

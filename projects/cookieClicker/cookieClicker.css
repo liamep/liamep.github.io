@@ -1,0 +1,32 @@
+body {
+  background-color: aquamarine;
+}
+main {
+  flex-direction: column;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  background-color: rgb(78, 155, 129);
+  border-radius: 2rem;
+  padding: 1rem;
+}
+#penger{
+  background-color: rgb(94, 189, 157);
+  border-radius: 2rem;
+  padding: 0.5rem;
+}
+#upgrade{
+  background-color:rgb(253, 253, 139);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom:  1rem;
+
+
+}
+#upgrade :hover{
+  background-color:rgb(253, 253, 139);
+}
+ 
