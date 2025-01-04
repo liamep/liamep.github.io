@@ -1,7 +1,6 @@
-.video-container {
+/* .video-container {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 100%;
 }
 
@@ -9,15 +8,17 @@
   width: 100%;
   max-width: 1000px;
   aspect-ratio: 16 / 9;
-}
+} */
 
-@media (max-width: 1090px) {
+/* @media (max-width: 1090px) {
   .video {
     width: 90%;
-  }
+  } */
 }
-.Juleforestilling{
-display: flex;
-justify-content: center;
-align-items: center;
-}
+
+
+
+
+
+
+
