@@ -22,7 +22,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: rgb(255, 255, 255);
+  color: #3498db;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -51,7 +51,7 @@ section {
 }
 
 h2 {
-  color: #80878f;
+  color: #1abc9c;
   margin-bottom: 20px;
   font-size: 2rem;
   font-weight: 600;
@@ -76,4 +76,10 @@ a {
 a:hover {
   color: #2c3e50;
   text-decoration: underline;
+}
+.info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 2;
 }

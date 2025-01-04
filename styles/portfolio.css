@@ -16,3 +16,8 @@
     width: 90%;
   }
 }
+.Juleforestilling{
+display: flex;
+justify-content: center;
+align-items: center;
+}
