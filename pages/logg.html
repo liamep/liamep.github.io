@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prosjektlogg</title>
+    <!-- Linker til den eksterne CSS-filen -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="../index.html">Hjem</a></li>
+        <li><a href="projects.html">Prosjekter</a></li>
+        <li><a href="about.html">Om meg</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+      </ul>
+    </nav>
+<header>
+    <h1>Min Prosjektlogg</h1>
+    <img src="image.png" alt="Skisse av prosjektplanen">
+</header>
+
+<main>
+    <section>
+        <h2>Onsdag 27. november</h2>
+        <p><strong>Tilpasset prosjektene mine til mobilbruk:</strong></p>
+        <ul>
+            <li>Når skjermen er under 900px, endres layout til 2 prosjekter per rad:</li>
+            <code>
+                @media (max-width: 900px) {<br>
+                &nbsp;&nbsp;.container {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;grid-template-columns: repeat(2, 1fr);<br>
+                &nbsp;&nbsp;}<br>
+                }
+            </code>
+            <li>Når skjermen er under 600px, endres layout til 1 prosjekt per rad:</li>
+            <code>
+                @media (max-width: 600px) {<br>
+                &nbsp;&nbsp;.container {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;grid-template-columns: 1fr;<br>
+                &nbsp;&nbsp;}<br>
+                }
+            </code>
+        </ul>
+        <p><strong>Plan videre:</strong> Tilpasse koden til stein-saks-papir-spillet på nettsiden min (<a href="https://liamep.github.io" target="_blank">liamep.github.io</a>), med kortere visning for motstanderens kort.</p>
+    </section>
+
+    <section>
+        <h2>Torsdag 5. desember</h2>
+        <p><strong>Oppdateringer:</strong></p>
+        <ul>
+            <li>Skrev informasjon om meg selv og fremtidige planer for nettsiden.</li>
+            <li>Byttet ut JavaScript-kode i HTML med ren HTML.</li>
+        </ul>
+        <p><strong>Nytt prosjekt:</strong> Startet på "Cookie Clicker" i JavaScript.</p>
+    </section>
+
+    <section>
+        <h2>Fredag 6. desember</h2>
+        <p><strong>Fremskritt på "Cookie Clicker"-prosjektet:</strong></p>
+        <ul>
+            <li>Implementerte en klikkefunksjon for å registrere antall klikk.</li>
+            <li>La til en funksjon for å telle opp "penger" per klikk.</li>
+            <li>Oppdaterte stilen for et mer estetisk utseende.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Onsdag 11. desember</h2>
+        <p><strong>Opprettet terningspill i JavaScript:</strong></p>
+        <ul>
+            <li>Funksjon for å trille et tall mellom 1 og 6:</li>
+            <code>
+                function kastTerning() {<br>
+                &nbsp;&nbsp;return Math.floor(Math.random() * 6) + 1;<br>
+                }
+            </code>
+            <li>Knapp for å trille terningen:</li>
+            <code>
+                const knapp = document.getElementById("knapp-for-å-trille");<br>
+                knapp.addEventListener("click", visTerningResultat);
+            </code>
+            <li>Viser resultatet av terningkastet på skjermen:</li>
+            <code>
+                const resultatElement = document.getElementById("terning-resultat");<br>
+                resultatElement.innerText = kastTerning();
+            </code>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Søndag 29. desember</h2>
+        <p><strong>Oppdatering av bakgrunnsbilde:</strong></p>
+        <ul>
+            <li>Byttet ut bakgrunnsbilde på hovedsiden med en animasjon av en gutt foran PC-en.</li>
+            <li>Redigerte animasjonen i Adobe Premiere Pro slik at den loopet jevnt, uten hakking.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Mandag 30. desember</h2>
+        <p><strong>Undersider for private prosjekter:</strong></p>
+        <ul>
+            <li>Opprettet undersider for:
+                <ul>
+                    <li>Juleforestilling</li>
+                    <li>Portrettfotografering hos Brage Finans</li>
+                </ul>
+            </li>
+            <li>Endret designet på disse sidene til å ligne "Prosjekter"-siden, ved å lenke til <code>prosjekter.css</code>.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Fredag 3. januar</h2>
+        <p><strong>Oppdatering av "Om meg"-seksjonen:</strong></p>
+        <ul>
+            <li>La til et familietre for å vise relasjoner.</li>
+            <li>Utvidet teksten om meg selv, med flere detaljer om bakgrunn og interesser.</li>
+            <li>La til et bilde av meg selv på hovedsiden og endret designet for å passe bedre med den nye informasjonen.</li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    © 2025 Min Prosjektlogg. Alle rettigheter reservert.
+</footer>
+
+</body>
+</html>
