@@ -7,7 +7,7 @@ body {
 
 header {
     background: #4CAF50;
-    color: #fff;
+    color: #000000;
     text-align: center;
     padding: 20px;
 }
@@ -19,28 +19,17 @@ main {
     background: #fff;
 }
 
-.container {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    background-color: #f5f5f5;
-    padding: 2rem;
-}
 
-#resultat {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr); 
-    grid-template-columns: repeat(2, 1fr); 
-}
+
 
 #valg_0, #valg_1, #valg_2, #valg_3 {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
     padding: 3rem;
-    max-width: 100%;
-    max-height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+    border-radius: 8px; 
+    height: 100px; 
 }
 
 #valg_0 {
@@ -62,15 +51,15 @@ main {
     background-color: #f6d2a67f;
     box-shadow: 0px 4px 6px rgba(246, 210, 166, 0.6);
 }
-#neste_spørsmål{
 
-}
 #neste_spørsmål{
-    padding: 2rem;
-    border-radius: 2rem;
-    padding-top: 1rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: #a7eea9;
+    margin-left: 2rem;
 }
 #neste_og_tilbake{
+padding-top: 1rem;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -78,16 +67,24 @@ align-items: center;
 
 #tilbake{
     all: unset;
-    padding: 2rem;
-    border: solid black;
+    border-radius: 1rem;
     margin-left: 4rem;
-    border-radius: 2rem;
+    padding: 1rem;
+    border: solid black;
+    background: #a7eea9;
+    margin-right: 2rem;    
+   
 }
 
 #neste_spørsmål:hover, #tilbake:hover{
-    background: linear-gradient(180deg, #a6a6f68f, #ebf6a685, #a6eaf67d, #f6d2a67f);
+    background: #679869;
 }
 
+#resultat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 

@@ -7,7 +7,7 @@ body {
 
 header {
     background: #4CAF50;
-    color: #fff;
+    color: #ffffff;
     text-align: center;
     padding: 20px;
 }
@@ -24,8 +24,8 @@ h1, h2 { color: #000000; }
 
 #quiz { 
     background: #45a049; 
-    padding: 5rem;
-    font-size: 5rem;
+    padding: 3rem;
+    font-size: 1.5rem;
     border: none;
     border-radius: 1rem;
 }
@@ -40,4 +40,47 @@ h1, h2 { color: #000000; }
 #quiz:hover { background: #3b8b41; }
 
 
+
+.Info_om_graf {
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+
+}
+.Info_om_graf h2 {
+    font-size: 1.5rem;
+}
+.Info_om_graf p {
+    font-size: 1rem;
+}
+.Info_om_graf ul {
+    margin-left: 20px; 
+}
+.Info_om_graf strong {
+    font-weight: bold;
+    color: #004f9e;
+}
+
+
+
+#tekst {
+    background-color: #e4ffe6;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0px; 
+}
+#tekst h1 {
+    color: #00509e;
+    font-size: 2em;
+    text-align: center;
+}
+#tekst p {
+    font-size: 1em;
+     
+}#videoWith{
+    max-width: 100%;
+ 
+    height:auto;
+}
 

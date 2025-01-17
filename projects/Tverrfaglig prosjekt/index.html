@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bærekraft og Avfall</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles/styles.css" />
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="kode.js" defer></script>
 
@@ -14,9 +15,18 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
     
 </head>
 <body>
+    <nav>
+        <ul class="nav">
+          <li><a href="index.html" class="active">Hjem</a></li>
+          <li><a href="/pages/projects.html">Prosjekter</a></li>
+          <li><a href="pages/about.html">Om meg</a></li>
+          <li><a href="pages/portfolio.html">Portfolio</a></li>
+          
+        </ul>
+      </nav>
     <header>
-        <h1>Bærekraft og Avfall</h1>
-        <p>Velkommen til mitt prosjekt om bærekraft og avfallshåndtering!</p>
+        <h1>Bærekraft og Avfall</h1>    
+        <h3>Panting av flasker og bokser</h3>
     </header>
     <main>
         <section id="Forskningsspørsmål">
@@ -26,9 +36,9 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
             <h2>https://qrfy.io/r/4VAq7pQkfW</h2>
 
             <div id="bildeOgKnapp">
-                <img src="/bilder/Hvorfor panter du flasker.png" alt="flaske_qr_kode" width="500px" >
-            
-                <a href="quiz.html"> <button id="quiz">Spørsmåls-quiz</button>  </a>
+                <img src="/projects/Tverrfaglig prosjekt/bilder/Hvorfor panter du flasker.png" alt="flaske_qr_kode" width="500px" >
+            <h1>Test dine kunskaper om miljøet</h1>
+                <a href="quiz.html"> <button id="quiz">Quiz <span></span></button>  </a>
 
             </div>
 
@@ -65,7 +75,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
                 </ul>
                 <h2>Hvordan tolke grafen</h2>
                 <ul>
-                    <li>Høyden på søylene viser hva som er mest vanlig <strong>innenfor</strong> hver aldersgruppe.</li>
+                    <li>Høyden på søylene viser hva som er mest vanlig innenfor hver aldersgruppe.</li>
                     <li>Du kan <strong>ikke</strong> sammenligne aldersgruppene direkte, fordi antallet som har svart kan variere mellom gruppene.</li>
                 </ul>
                 <h2>Tilpasse grafen</h2>
@@ -73,8 +83,25 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
                     <li>Du kan fjerne aldersgrupper ved å krysse dem ut i grafen.</li>
                     <li>For eksempel, hvis du kun vil se hva <strong>50+</strong> har svart, kan du fjerne alle andre aldersgrupper, og grafen tilpasser seg for å vise mer nøyaktige resultater for denne gruppen.</li>
                 </ul>
-                
-          
+            </div>
+        
+                <article id="tekst">
+                    <h1>Panting av flasker og bokser</h1>
+                    <p>Panting av flasker og bokser er en enkel måte å bidra til miljøet på. Ifølge Infinitum sparer vi nok energi til å lade en mobiltelefon 70 ganger for hver flaske som pantes. I 2021 pantet nordmenn over 1,5 milliarder flasker og bokser. Dette resulterte i resirkulering av over 23 000 tonn plast og nesten 13 000 tonn aluminium, og sparte like mye strøm som 65 000 husholdninger bruker på et år.</p>
+                    <p>Pantesystemet gjør at materialene kan brukes igjen og igjen, noe som reduserer behovet for å lage nye råvarer og kutter utslipp. Norge er blant de beste i verden på resirkulering, med en gjenvinningsgrad på 92 %.</p>
+                    <p>Ved å pante bidrar vi til en mer bærekraftig fremtid, der ressurser utnyttes effektivt og miljøet spares – alt med en liten innsats fra hver og en av oss.</p>
+                </article>
+
+                <video id="videoWith" controls width="1920" height="1080">
+                    <source src="/videos/Hva skjer med flaskene du panter NRK.mp4" type="video/mp4">
+                 </video>
+                 
+                 <h1>Kilder</h1>
+         
+                 
+                 <li> <a href="https://infinitum.no/">Infinitum.no</a>
+                </a></li>
+                <li> <a href="https://www.nrk.no/video/hva-skjer-med-flaskene-du-panter_e9bf1bc7-dd65-468d-9610-688d362ccf8d">nrk.no</li>
         </div>
       </div>
     </main>

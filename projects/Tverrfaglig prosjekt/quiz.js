@@ -24,6 +24,8 @@ async function hentSpørsmål() {
       ],
     }),
   });
+
+  
   const data = JSON.parse((await svar.json()).choices[0].message.content);
   aktivtSpørsmål = data;
 
@@ -40,6 +42,7 @@ async function hentSpørsmål() {
 
 
 
+
 resultat = document.getElementById("resultat");
 
 
@@ -50,30 +53,36 @@ document.getElementById("neste_spørsmål").onclick = () => {
 }
 
 
-
-
 document.getElementById("valg_0").onclick = () => {
     if (aktivtSpørsmål.correct_answer == 0) {
         resultat.innerHTML = "Riktig"
+        resultat.style.color = "green"
     } else resultat.innerHTML = "Feil"
+    resultat.style.color = "red"
 }
 
 document.getElementById("valg_1").onclick = () => {
     if (aktivtSpørsmål.correct_answer == 1) {
          resultat.innerHTML = "Riktig"
+         resultat.style.color = "green"
     } else resultat.innerHTML = "Feil"
+    resultat.style.color = "red"
 }
 
 document.getElementById("valg_2").onclick = () => {
     if (aktivtSpørsmål.correct_answer == 2) {
         resultat.innerHTML = "Riktig"
+        resultat.style.color = "green"
     } else resultat.innerHTML = "Feil"
+    resultat.style.color = "red"
 }
 
 document.getElementById("valg_3").onclick = () => {
     if (aktivtSpørsmål.correct_answer == 3) {
         resultat.innerHTML = "Riktig"
+        resultat.style.color = "green"
     } else resultat.innerHTML = "Feil"
+    resultat.style.color = "red"
 }
 
 
