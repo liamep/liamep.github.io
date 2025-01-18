@@ -21,7 +21,6 @@ main {
 
 
 
-
 #valg_0, #valg_1, #valg_2, #valg_3 {
     display: flex; 
     justify-content: center; 
@@ -51,6 +50,34 @@ main {
     background-color: #f6d2a67f;
     box-shadow: 0px 4px 6px rgba(246, 210, 166, 0.6);
 }
+
+
+
+#valg_0:hover {
+    background-color: #a6a6f6;
+    box-shadow: 0px 4px 6px rgb(166, 166, 246);
+
+}
+
+#valg_1:hover {
+    background-color: #ebf6a6;
+    box-shadow: 0px 4px 6px rgb(235, 246, 166);
+
+}
+
+#valg_2:hover {
+    background-color: #a6eaf6;
+    box-shadow: 0px 4px 6px rgb(166, 234, 246);
+ 
+}
+
+#valg_3:hover {
+    background-color: #f6d2a6;
+    box-shadow: 0px 4px 6px rgb(246, 210, 166);
+}
+
+
+
 
 #neste_spørsmål{
     border-radius: 1rem;
