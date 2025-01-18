@@ -1,9 +1,4 @@
-const ChatgptNøkkel =
-  "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";
-
 let aktivtSpørsmål; 
-
-
 
 async function hentSpørsmål() {
   const svar = await fetch("https://openapi-endpoint.onrender.com/api/sporsmal", {
@@ -11,17 +6,6 @@ async function hentSpørsmål() {
     headers: {
       "Content-Type": "application/json",
     },
-    // body: JSON.stringify({
-    //   model: "gpt-3.5-turbo",
-    //   // messages: [
-    //   //   {
-    //   //     role: "user",
-    //   //     content:
-    //   //       'Gi meg et miljøspørsmål (Ikke de vanlige typiske spørsmålene)(ikke for avansert)(korte spørsmål) i dette formatet: {"question": "spørsmål", "options": ["alt1", "alt2", "alt3", "alt4"], "correct_answer": N}',
-            
-    //   //   },
-    //   // ],
-    // }),
   });
 
 
@@ -37,39 +21,6 @@ async function hentSpørsmål() {
   document.getElementById("valg_2").innerHTML = data.options[2];
   document.getElementById("valg_3").innerHTML = data.options[3];
 }
-
-
-// async function hentSpørsmål2() {
-//   const svar = await fetch("https://openapi-endpoint.onrender.com/api/chat", {
-//     method: "POST",
-//     headers: {
-//       "Content-Type": "application/json",
-//     },
-//     body: JSON.stringify({
-//       "prompt": 'Gi meg et miljøspørsmål (Ikke de vanlige typiske spørsmålene)(ikke for avansert)(korte spørsmål) i dette formatet: {"question": "spørsmål", "options": ["alt1", "alt2", "alt3", "alt4"], "correct_answer": N}'
-//     }),
-//   });
-
-//   const data = await svar.json();
-//   aktivtSpørsmål = data;
-
-//   console.log("CHATGPT: ", data);
-
-//   // Oppdater HTML
-//   document.getElementById("spørsmål").innerHTML = data.question;
-//   document.getElementById("valg_0").innerHTML = data.options[0];
-//   document.getElementById("valg_1").innerHTML = data.options[1];
-//   document.getElementById("valg_2").innerHTML = data.options[2];
-//   document.getElementById("valg_3").innerHTML = data.options[3];
-// }
-
-
-
-
-
-
-
-
 
 resultat = document.getElementById("resultat");
 
