@@ -1,66 +1,467 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liam Eidsnes Phillips</title>
     <link rel="stylesheet" href="/styles/styles.css" />
     <link rel="stylesheet" href="/styles/home.css" />
-    <title>Home</title>
   </head>
   <body>
-    <video autoplay muted loop class="background-video">
-      <source src="./videos/Website_computer.mp4" type="video/mp4" />
-    </video>
-
-    <nav>
+    <nav id="navbar">
       <ul class="nav">
         <li><a href="index.html" class="active">Hjem</a></li>
-        <li><a href="/pages/projects.html">Prosjekter</a></li>
+        <li><a href="pages/projects.html">Prosjekter</a></li>
         <li><a href="pages/about.html">Om meg</a></li>
         <li><a href="pages/portfolio.html">Portfolio</a></li>
-        
       </ul>
     </nav>
 
     <div class="hero">
-      <h1>Velkommen til min hjemmeside</h1>
-      <p class="author">Liam Eidsnes Phillips</p>
-      <h1>↓</h1>
+      <h1>Liam Eidsnes Phillips</h1>
+      <p>Informasjonsteknologi & Medieproduksjon</p>
     </div>
 
-    <div class="container">
-      <main>
-        
+    <!-- Scrollende bildegalleri -->
+    <div class="scroll-gallery">
+      <!-- RAD 1: UTVIKLING -->
+      <div class="scroll-row">
+        <div class="scroll-track scroll-left">
+          <div class="scroll-item">
+            <img
+              src="https://i0.wp.com/martinnwong.com/wp-content/uploads/2018/01/html_css_js.png?fit=2000%2C1109&ssl=1"
+              alt="Frontend"
+            />
+            <h3>Frontend</h3>
+            <p>HTML, CSS og JavaScript</p>
+          </div>
+          <div class="scroll-item">
+            <img
+              src="https://www.thiings.co/_next/image?url=https%3A%2F%2Flftz25oez4aqbxpq.public.blob.vercel-storage.com%2Fimage-rgJwkWTrzrocDwMgi5sD0jwpdnH5Ot.png&w=1000&q=75"
+              alt="Backend"
+            />
+            <h3>Backend</h3>
+            <p>SQL, Supabase, Node.js</p>
+          </div>
+          <div class="scroll-item">
+            <img
+              src="https://cdn.pixabay.com/photo/2018/07/14/12/28/design-3537513_1280.png"
+              alt="Design"
+            />
+            <h3>Design</h3>
+            <p>Visuell design og UX</p>
+          </div>
+          <div class="scroll-item">
+            <img
+              src="https://cdn.pixabay.com/photo/2017/09/07/10/46/logo-2724550_1280.png"
+              alt="Video og Bilde"
+            />
+            <h3>Video & Bilde</h3>
+            <p>Adobe-verktøy</p>
+          </div>
+          <div class="scroll-item test-item">
+            <div class="test-placeholder">HTML</div>
+            <h3>HTML</h3>
+            <p>Strukturering av nettsider</p>
+          </div>
+          <div class="scroll-item test-item">
+            <div class="test-placeholder">CSS</div>
+            <h3>CSS</h3>
+            <p>Styling og layout</p>
+          </div>
+          <div class="scroll-item test-item">
+            <div class="test-placeholder">JS</div>
+            <h3>JavaScript</h3>
+            <p>Interaktivitet og logikk</p>
+          </div>
+          <div class="scroll-item test-item">
+            <div class="test-placeholder">PY</div>
+            <h3>Python</h3>
+            <p>Backend programmering</p>
+          </div>
+          <div class="scroll-item test-item">
+            <div class="test-placeholder">SQL</div>
+            <h3>SQL</h3>
+            <p>Database queries</p>
+          </div>
+          <div class="scroll-item test-item">
+            <div class="test-placeholder">NODE</div>
+            <h3>Node.js</h3>
+            <p>JavaScript runtime</p>
+          </div>
+          <div class="scroll-item test-item">
+            <div class="test-placeholder">REACT</div>
+            <h3>React</h3>
+            <p>UI framework</p>
+          </div>
+          <div class="scroll-item test-item">
+            <div class="test-placeholder">GIT</div>
+            <h3>Git</h3>
+            <p>Versjonskontroll</p>
+          </div>
+          <!-- Duplikater -->
+          <div class="scroll-item">
+            <img
+              src="https://i0.wp.com/martinnwong.com/wp-content/uploads/2018/01/html_css_js.png?fit=2000%2C1109&ssl=1"
+              alt="Frontend"
+            />
+            <h3>Frontend</h3>
+            <p>HTML, CSS og JavaScript</p>
+          </div>
+          <div class="scroll-item">
+            <img
+              src="https://www.thiings.co/_next/image?url=https%3A%2F%2Flftz25oez4aqbxpq.public.blob.vercel-storage.com%2Fimage-rgJwkWTrzrocDwMgi5sD0jwpdnH5Ot.png&w=1000&q=75"
+              alt="Backend"
+            />
+            <h3>Backend</h3>
+            <p>SQL, Supabase, Node.js</p>
+          </div>
+          <div class="scroll-item">
+            <img
+              src="https://cdn.pixabay.com/photo/2018/07/14/12/28/design-3537513_1280.png"
+              alt="Design"
+            />
+            <h3>Design</h3>
+            <p>Visuell design og UX</p>
+          </div>
+          <div class="scroll-item">
+            <img
+              src="https://cdn.pixabay.com/photo/2017/09/07/10/46/logo-2724550_1280.png"
+              alt="Video og Bilde"
+            />
+            <h3>Video & Bilde</h3>
+            <p>Adobe-verktøy</p>
+          </div>
+          <div class="scroll-item test-item">
+            <div class="test-placeholder">HTML</div>
+            <h3>HTML</h3>
+            <p>Strukturering av nettsider</p>
+          </div>
+          <div class="scroll-item test-item">
+            <div class="test-placeholder">CSS</div>
+            <h3>CSS</h3>
+            <p>Styling og layout</p>
+          </div>
+          <div class="scroll-item test-item">
+            <div class="test-placeholder">JS</div>
+            <h3>JavaScript</h3>
+            <p>Interaktivitet og logikk</p>
+          </div>
+          <div class="scroll-item test-item">
+            <div class="test-placeholder">PY</div>
+            <h3>Python</h3>
+            <p>Backend programmering</p>
+          </div>
+          <div class="scroll-item test-item">
+            <div class="test-placeholder">SQL</div>
+            <h3>SQL</h3>
+            <p>Database queries</p>
+          </div>
+          <div class="scroll-item test-item">
+            <div class="test-placeholder">NODE</div>
+            <h3>Node.js</h3>
+            <p>JavaScript runtime</p>
+          </div>
+          <div class="scroll-item test-item">
+            <div class="test-placeholder">REACT</div>
+            <h3>React</h3>
+            <p>UI framework</p>
+          </div>
+          <div class="scroll-item test-item">
+            <div class="test-placeholder">GIT</div>
+            <h3>Git</h3>
+            <p>Versjonskontroll</p>
+          </div>
+        </div>
+      </div>
 
-        <section class="info">
-          <h2>
-            <ul class="grouped-list">
-              <li class="group">Jeg heter Liam Eidsnes Phillips og går på Amalie Skram videregående skole.</li>
-              <li class="group">Jeg studerer informasjonsteknologi og medieproduksjon.</li>
-              <li class="group">Dette studiet kombinerer teknologi og kreativitet, noe jeg trives veldig godt med.</li>
-        
-           
-              <li class="group">Jeg liker å jobbe med koding, design og videoredigering.</li>
-              <li class="group">På fritiden spiller jeg fotball, gamer og jobber med hobbyprosjekter innen teknologi.</li>
-              <li class="group">Jeg er også sosial og liker å bruke tid med venner og familie.</li>
-        
-     
-              <li class="group">Jeg ser for meg en fremtid innen IT eller medieproduksjon.</li>
-              <li class="group">Drømmen er å jobbe som utvikler, designer eller kanskje starte en egen bedrift.</li>
-              <li class="group">Akkurat nå fokuserer jeg på å lære mest mulig og ha det gøy samtidig.</li>
-            </ul>
-          </h2>
-        </section>
+      <!-- RAD 2: IDRETT -->
+      <div class="scroll-row">
+        <div class="scroll-track scroll-right">
+          <div class="scroll-item">
+            <img
+              src="https://cdn.pixabay.com/photo/2014/04/02/16/17/ball-306820_1280.png"
+              alt="Fotball"
+              style="object-fit: contain; padding: 40px"
+            />
+            <h3>Fotball</h3>
+            <p>Lagarbeid og dedikasjon</p>
+          </div>
+          <div class="scroll-item test-item">
+            <div class="test-placeholder">RUN</div>
+            <h3>Løping</h3>
+            <p>Kondisjon og utholdenhet</p>
+          </div>
+          <div class="scroll-item test-item">
+            <div class="test-placeholder">CLIMB</div>
+            <h3>Klatring</h3>
+            <p>Styrke og teknikk</p>
+          </div>
+          <div class="scroll-item test-item">
+            <div class="test-placeholder">SWIM</div>
+            <h3>Svømming</h3>
+            <p>Allsidig trening</p>
+          </div>
+          <div class="scroll-item test-item">
+            <div class="test-placeholder">BIKE</div>
+            <h3>Sykling</h3>
+            <p>Utholdenhet og fart</p>
+          </div>
+          <div class="scroll-item test-item">
+            <div class="test-placeholder">PADEL</div>
+            <h3>Padel</h3>
+            <p>Presisjon og strategi</p>
+          </div>
+          <!-- Duplikater -->
+          <div class="scroll-item">
+            <img
+              src="https://cdn.pixabay.com/photo/2014/04/02/16/17/ball-306820_1280.png"
+              alt="Fotball"
+              style="object-fit: contain; padding: 40px"
+            />
+            <h3>Fotball</h3>
+            <p>Lagarbeid og dedikasjon</p>
+          </div>
+          <div class="scroll-item test-item">
+            <div class="test-placeholder">RUN</div>
+            <h3>Løping</h3>
+            <p>Kondisjon og utholdenhet</p>
+          </div>
+          <div class="scroll-item test-item">
+            <div class="test-placeholder">CLIMB</div>
+            <h3>Klatring</h3>
+            <p>Styrke og teknikk</p>
+          </div>
+          <div class="scroll-item test-item">
+            <div class="test-placeholder">SWIM</div>
+            <h3>Svømming</h3>
+            <p>Allsidig trening</p>
+          </div>
+          <div class="scroll-item test-item">
+            <div class="test-placeholder">BIKE</div>
+            <h3>Sykling</h3>
+            <p>Utholdenhet og fart</p>
+          </div>
+          <div class="scroll-item test-item">
+            <div class="test-placeholder">PADEL</div>
+            <h3>Padel</h3>
+            <p>Presisjon og strategi</p>
+          </div>
+        </div>
+      </div>
 
-   
-      
-        
-        </section>
-      </main>
+      <!-- RAD 3: BRAGE FINANCE -->
+      <div class="scroll-row">
+        <div class="scroll-track scroll-left">
+          <div class="scroll-item">
+            <img
+              src="https://areol.no/wp-content/uploads/2024/03/Brage_logo_liggende-2.png"
+              alt="Brage Finance"
+            />
+            <h3>Brage Finance</h3>
+            <p>Utviklingsprosjekt</p>
+          </div>
+          <div class="scroll-item test-item">
+            <div class="test-placeholder">SP</div>
+            <h3>SharePoint</h3>
+            <p>Migrering og moderne maler</p>
+          </div>
+          <div class="scroll-item test-item">
+            <div class="test-placeholder">SEARCH</div>
+            <h3>Søkefunksjoner</h3>
+            <p>Koding av smarte løsninger</p>
+          </div>
+          <div class="scroll-item test-item">
+            <div class="test-placeholder">START</div>
+            <h3>Startmeny</h3>
+            <p>Optimalisering og design</p>
+          </div>
+          <div class="scroll-item test-item">
+            <div class="test-placeholder">PHOTO</div>
+            <h3>Portrettfoto</h3>
+            <p>Booking og fotografering</p>
+          </div>
+          <div class="scroll-item test-item">
+            <div class="test-placeholder">SCREEN</div>
+            <h3>Skjermsystem</h3>
+            <p>Oppdatering av system</p>
+          </div>
+          <div class="scroll-item test-item">
+            <div class="test-placeholder">GEAR</div>
+            <h3>Utstyrsdeling</h3>
+            <p>Oppsett for utstyr</p>
+          </div>
+          <!-- Duplikater -->
+          <div class="scroll-item">
+            <img
+              src="https://areol.no/wp-content/uploads/2024/03/Brage_logo_liggende-2.png"
+              alt="Brage Finance"
+            />
+            <h3>Brage Finance</h3>
+            <p>Utviklingsprosjekt</p>
+          </div>
+          <div class="scroll-item test-item">
+            <div class="test-placeholder">SP</div>
+            <h3>SharePoint</h3>
+            <p>Migrering og moderne maler</p>
+          </div>
+          <div class="scroll-item test-item">
+            <div class="test-placeholder">SEARCH</div>
+            <h3>Søkefunksjoner</h3>
+            <p>Koding av smarte løsninger</p>
+          </div>
+          <div class="scroll-item test-item">
+            <div class="test-placeholder">START</div>
+            <h3>Startmeny</h3>
+            <p>Optimalisering og design</p>
+          </div>
+          <div class="scroll-item test-item">
+            <div class="test-placeholder">PHOTO</div>
+            <h3>Portrettfoto</h3>
+            <p>Booking og fotografering</p>
+          </div>
+          <div class="scroll-item test-item">
+            <div class="test-placeholder">SCREEN</div>
+            <h3>Skjermsystem</h3>
+            <p>Oppdatering av system</p>
+          </div>
+          <div class="scroll-item test-item">
+            <div class="test-placeholder">GEAR</div>
+            <h3>Utstyrsdeling</h3>
+            <p>Oppsett for utstyr</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- RAD 4: GENERELT -->
+      <div class="scroll-row">
+        <div class="scroll-track scroll-right">
+          <div class="scroll-item">
+            <img
+              src="https://img.icons8.com/?size=1200&id=ELXU0hCjPvuG&format=png"
+              alt="Gaming"
+              style="object-fit: cover; object-position: center top"
+            />
+            <h3>Gaming</h3>
+            <p>Interesse for spillkultur</p>
+          </div>
+          <div class="scroll-item">
+            <img
+              src="https://bypakkenedreglomma.no/wp-content/uploads/2021/11/Prosjekter.png"
+              alt="Prosjekter"
+            />
+            <h3>Hobbyprosjekter</h3>
+            <p>Egne IT-prosjekter</p>
+          </div>
+          <div class="scroll-item">
+            <img
+              src="https://hurbad.com/wp-content/uploads/2021/12/Cisco-Packet-Tracer.png"
+              alt="Cisco"
+            />
+            <h3>Cisco Packet Tracer</h3>
+            <p>Nettverkskompetanse</p>
+          </div>
+          <div class="scroll-item">
+            <img src="photos/bergen.png" alt="Cloud Native" />
+            <h3>Cloud Native Bergen</h3>
+            <p>Skybaserte løsninger</p>
+          </div>
+          <div class="scroll-item">
+            <img
+              src="https://cdn.pixabay.com/photo/2024/03/28/19/43/customer-service-8661577_1280.png"
+              alt="Brukerstøtte"
+            />
+            <h3>Brukerstøtte</h3>
+            <p>Teknisk support</p>
+          </div>
+          <div class="scroll-item test-item">
+            <div class="test-placeholder">MUSIC</div>
+            <h3>Musikk</h3>
+            <p>Interesse for musikk</p>
+          </div>
+          <div class="scroll-item test-item">
+            <div class="test-placeholder">TRAVEL</div>
+            <h3>Reise</h3>
+            <p>Oppleve verden</p>
+          </div>
+          <!-- Duplikater -->
+          <div class="scroll-item">
+            <img
+              src="https://img.icons8.com/?size=1200&id=ELXU0hCjPvuG&format=png"
+              alt="Gaming"
+              style="object-fit: cover; object-position: center top"
+            />
+            <h3>Gaming</h3>
+            <p>Interesse for spillkultur</p>
+          </div>
+          <div class="scroll-item">
+            <img
+              src="https://bypakkenedreglomma.no/wp-content/uploads/2021/11/Prosjekter.png"
+              alt="Prosjekter"
+            />
+            <h3>Hobbyprosjekter</h3>
+            <p>Egne IT-prosjekter</p>
+          </div>
+          <div class="scroll-item">
+            <img
+              src="https://hurbad.com/wp-content/uploads/2021/12/Cisco-Packet-Tracer.png"
+              alt="Cisco"
+            />
+            <h3>Cisco Packet Tracer</h3>
+            <p>Nettverkskompetanse</p>
+          </div>
+          <div class="scroll-item">
+            <img src="photos/bergen.png" alt="Cloud Native" />
+            <h3>Cloud Native Bergen</h3>
+            <p>Skybaserte løsninger</p>
+          </div>
+          <div class="scroll-item">
+            <img
+              src="https://cdn.pixabay.com/photo/2024/03/28/19/43/customer-service-8661577_1280.png"
+              alt="Brukerstøtte"
+            />
+            <h3>Brukerstøtte</h3>
+            <p>Teknisk support</p>
+          </div>
+          <div class="scroll-item test-item">
+            <div class="test-placeholder">MUSIC</div>
+            <h3>Musikk</h3>
+            <p>Interesse for musikk</p>
+          </div>
+          <div class="scroll-item test-item">
+            <div class="test-placeholder">TRAVEL</div>
+            <h3>Reise</h3>
+            <p>Oppleve verden</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- hh -->
-    <footer class="footer">
-      <p>Laget av Liam Eidsnes Phillips</p>
-    </footer>
+
+    <!-- Footer -->
+
+    <!-- Scroll to top knapp -->
+    <div class="scroll-top" id="scrollTop"></div>
+
+    <!-- Enkel JavaScript -->
+    <script>
+      // Navbar scroll effect
+      window.addEventListener("scroll", () => {
+        const navbar = document.getElementById("navbar");
+        const scrollTop = document.getElementById("scrollTop");
+
+        if (window.scrollY > 100) {
+          navbar.classList.add("scrolled");
+          scrollTop.classList.add("visible");
+        } else {
+          navbar.classList.remove("scrolled");
+          scrollTop.classList.remove("visible");
+        }
+      });
+
+      // Scroll to top
+      document.getElementById("scrollTop").addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
   </body>
 </html>
