@@ -1,66 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/styles.css" />
-    <link rel="stylesheet" href="/styles/home.css" />
-    <title>Home</title>
-  </head>
-  <body>
-    <video autoplay muted loop class="background-video">
-      <source src="./videos/Website_computer.mp4" type="video/mp4" />
-    </video>
+<html lang="no">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Liam Eidsnes Phillips</title>
+        <link rel="stylesheet" href="/styles/styles.css" />
+        <link rel="stylesheet" href="/styles/home.css" />
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="container">
+                <ul class="nav">
+                    <li><a href="index.html" class="active">Hjem</a></li>
+                    <li><a href="pages/projects.html">Prosjekter</a></li>
+                    <li><a href="pages/about.html">Om meg</a></li>
+                    <li><a href="pages/portfolio.html">Portfolio</a></li>
+                </ul>
+            </div>
+        </nav>
 
-    <nav>
-      <ul class="nav">
-        <li><a href="index.html" class="active">Hjem</a></li>
-        <li><a href="/pages/projects.html">Prosjekter</a></li>
-        <li><a href="pages/about.html">Om meg</a></li>
-        <li><a href="pages/portfolio.html">Portfolio</a></li>
-        
-      </ul>
-    </nav>
+        <header class="hero">
+            <div class="hero-inner">
+                <div class="hero-img">
+                    <img
+                        src="/photos/liam.png"
+                        alt="Portrett av Liam Eidsnes Phillips"
+                    />
+                </div>
+                <div class="hero-text">
+                    <h1>Liam Eidsnes Phillips</h1>
+                    <p>
+                        IT-elev med lidenskap for teknologi, webutvikling og
+                        problemløsing. Jeg utvikler egne prosjekter, jobber med
+                        databaser og hjelper andre med å realisere ideene sine.
+                    </p>
+                    <a href="pages/projects.html" class="btn"
+                        >Se prosjektene mine</a
+                    >
+                </div>
+            </div>
+        </header>
 
-    <div class="hero">
-      <h1>Velkommen til min hjemmeside</h1>
-      <p class="author">Liam Eidsnes Phillips</p>
-      <h1>↓</h1>
-    </div>
-
-    <div class="container">
-      <main>
-        
-
-        <section class="info">
-          <h2>
-            <ul class="grouped-list">
-              <li class="group">Jeg heter Liam Eidsnes Phillips og går på Amalie Skram videregående skole.</li>
-              <li class="group">Jeg studerer informasjonsteknologi og medieproduksjon.</li>
-              <li class="group">Dette studiet kombinerer teknologi og kreativitet, noe jeg trives veldig godt med.</li>
-        
-           
-              <li class="group">Jeg liker å jobbe med koding, design og videoredigering.</li>
-              <li class="group">På fritiden spiller jeg fotball, gamer og jobber med hobbyprosjekter innen teknologi.</li>
-              <li class="group">Jeg er også sosial og liker å bruke tid med venner og familie.</li>
-        
-     
-              <li class="group">Jeg ser for meg en fremtid innen IT eller medieproduksjon.</li>
-              <li class="group">Drømmen er å jobbe som utvikler, designer eller kanskje starte en egen bedrift.</li>
-              <li class="group">Akkurat nå fokuserer jeg på å lære mest mulig og ha det gøy samtidig.</li>
-            </ul>
-          </h2>
+        <section class="skills">
+            <div class="container">
+                <h2>Hva jeg jobber med</h2>
+                <ul>
+                    <li>Webutvikling – HTML, CSS, JavaScript, React</li>
+                    <li>Digitale løsninger og databaser</li>
+                    <li>IT-support og SharePoint</li>
+                    <li>Hjelper medstudenter å fullføre prosjekter</li>
+                </ul>
+            </div>
         </section>
-
-   
-      
-        
-        </section>
-      </main>
-    </div>
-    <!-- hh -->
-    <footer class="footer">
-      <p>Laget av Liam Eidsnes Phillips</p>
-    </footer>
-  </body>
+    </body>
 </html>
