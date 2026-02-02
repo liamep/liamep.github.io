@@ -1,71 +1,27 @@
-body {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-header h1 {
-  display: flex;
-  justify-content: center;
-}
-main h2 {
-  display: flex;
-  justify-content: center;
-}
-.erfaring {
-  margin-left: 2rem;
-  padding: 6rem;
-  background-color: rgba(52, 52, 52, 0.6);
-  border-radius: 5px;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  font-size: 1rem;
-  border: 5px solid black;
-  width: 20%;
-}
-
-.about-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.about-header p {
-  font-size: 1.2rem;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-
 main {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 1rem;
-}
-
-.about-main h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  border-bottom: 2px solid #333;
-  padding-bottom: 0.5rem;
-}
-
-main p {
-  font-size: 1.2rem;
-  line-height: 1.8;
+    padding: 4rem 0;
 }
 
 .omMeg {
-  border-bottom: #333 2px solid;
+    max-width: 800px;
+    margin: auto;
+    background: var(--bg-card);
+    padding: 2rem;
+    border-radius: 12px;
 }
 
-.omMeg h1 {
-  display: flex;
-  justify-content: center;
+.omMeg h2 {
+    margin-bottom: 1rem;
+    color: var(--accent);
 }
 
-.fam p {
-  font-size: 1.2rem;
-  color: #bbb;
+section {
+    max-width: 800px;
+    margin: 3rem auto;
 }
-.familietre img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
+
+section img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 1rem;
 }

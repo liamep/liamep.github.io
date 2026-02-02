@@ -1,49 +1,73 @@
+/* RESET */
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
+/* FARGER */
+:root {
+    --bg-main: #1e1f26;
+    --bg-card: #2a2c35;
+    --accent: #f4c067;
+    --text-main: #ffffff;
+    --text-muted: #bdbdbd;
 }
 
-body,
-html {
-    overscroll-behavior: none;
-}
-
+/* BODY */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Segoe UI", sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    line-height: 1.6;
 }
 
+/* NAVBAR */
 nav {
-    background-color: #222;
-    padding: 2rem;
-    width: 100%;
+    background: #181920;
+    padding: 1rem 0;
 }
 
 .nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
 }
 
-.nav li a {
-    color: #fff;
+.nav a {
     text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 800;
-    border-radius: 10px;
-    padding: 10px;
-    margin-left: 10px;
+    color: var(--text-muted);
+    font-weight: 500;
+    transition: color 0.3s;
 }
 
-.nav li a:hover {
-    background-color: rgb(50, 50, 50);
+.nav a:hover,
+.nav a.active {
+    color: var(--accent);
 }
 
-.nav .active {
-    background-color: rgb(65, 65, 65);
+/* CONTAINER */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    background: var(--accent);
+    color: #000;
+    padding: 0.7rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(244, 192, 103, 0.4);
 }
